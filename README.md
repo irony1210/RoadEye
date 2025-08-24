@@ -1,20 +1,20 @@
-# Road Damage Detection Applications
+# Road Damage Detection Applications  
 
-This project is road damage detection applications that designed to enhance road safety and infrastructure maintenance by swiftly identifying and categorizing various forms of road damage, such as potholes and cracks.
+Road infrastructure quality plays a critical role in transportation safety and efficiency. Timely detection and classification of road surface damage can significantly reduce accidents and optimize maintenance operations.  
 
-## Performing Detection Using Image
-![Detection using image](resource/RDD_Image_Example.gif)
+This project presents a **road damage detection framework** that leverages deep learning for automated damage recognition. Detection is performed on images, allowing efficient inspection without manual intervention.  
 
-## Performing Detection Using Video
-![Detection using video](resource/RDD_Video_Example.gif)
+## Performing Detection Using Image  
 
-The project is powered by YOLOv8 deep learning model that trained on Crowdsensing-based Road Damage Detection Challenge 2022 dataset.
+The detection system is powered by the **YOLOv8 object detection model**, trained on the *Crowdsensing-based Road Damage Detection Challenge 2022 dataset*.  
 
-There is four types of damage that this model can detects such as:
-- Longitudinal Crack
-- Transverse Crack
-- Alligator Crack
-- Potholes
+The model achieves robust detection across four major categories of road damage:  
+- **Longitudinal Cracks**  
+- **Transverse Cracks**  
+- **Alligator Cracks**  
+- **Potholes**  
+
+This approach demonstrates the potential of deep learning in enabling scalable, accurate, and cost-efficient solutions for smart infrastructure maintenance.
 
 ## Running on Local Server
 
@@ -46,12 +46,6 @@ pip install -r requirements.txt
 # Start the streamlit webserver
 streamlit run Home.py
 ```
-
-## Web Demo
-
-### [🎈Webserver Online Demo](https://roaddamagedetection.streamlit.app/)
-    
-    You can access the webserver demo on the streamlit cloud. But due to hardware limitations, some functions may not be working as intended. Such as, the realtime detection cannot capture the webcam input and slow inference on video detection.
 
 ## Training
 
@@ -113,9 +107,19 @@ This is the training result of the YOLOv8s model that trained on the filtered Ja
     <img src='resource/val_batch2_pred.jpg' width='100%'>
 </p>
 
-## License and Citations
-- Road Damage Dataset from Crowdsensing-based Road Damage Detection Challenge (CRDDC2022)
-- All rights reserved on YOLOv8 license permits by [Ultralytics](https://github.com/ultralytics/ultralytics) and [Streamlit](https://streamlit.io/) framework
+## License and Citations  
+
+- **Dataset**: Crowdsensing-based Road Damage Detection Challenge (CRDDC 2022)  
+  Deepak Arya, Ankit Mangal, Abhinav Kumar, Gaurav Singh, Shubham Varshney,  
+  Pranjal Kumar, Arnab Maiti, Keiji Watanabe, Daya Shankar Arya, Kohei Yasuhara, et al.  
+  *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2022*  
+  [Read Paper](https://openaccess.thecvf.com/content/CVPR2022W/AI4CC/html/Arya_CRDDC22_Crowdsensing-Based_Road_Damage_Detection_Challenge_2022_CVPRW_2022_paper.html)  
+
+- **Frameworks**:  
+  - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) (GPL-3.0 License)  
+  - [Streamlit](https://streamlit.io/) (Apache 2.0 License)  
 
 ---
-This project is created for the [Road Damage Detection Challenge](https://s.id/RDDHariJalan23) by [Ministry of Public Works and Housing](https://pu.go.id/) for celebrating the "Peringatan Hari Jalan 2023"
+
+This project is developed as part of an academic B.Tech project.  
+Please cite the original dataset paper if you use this work in research or publications.
